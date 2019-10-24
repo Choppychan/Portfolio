@@ -1,5 +1,5 @@
 /*!
- * Materialize v1.0.0-rc.1 (http://materializecss.com)
+ * Materialize v1.0.0 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
@@ -760,7 +760,7 @@
 }
 
 .light-blue-text {
-  color: #000 !important;
+  color: #03a9f4 !important;
 }
 
 .light-blue.lighten-5 {
@@ -2128,9 +2128,8 @@
 }
 
 .white-text {
-  color: #fff !important;
+  color: #FFFFFF !important;
 }
-
 
 .transparent {
   background-color: transparent !important;
@@ -2254,7 +2253,9 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+     -moz-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -2605,20 +2606,9 @@ ul:not(.browser-default) > li {
 }
 
 a {
-  color: #948f8f;
+  color: #039be5;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
-}
-
-.links:visited {
-  color: #000;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.links:hover {
-  color: #948f8f;
-  text-decoration:underline;
 }
 
 .valign-wrapper {
@@ -2823,40 +2813,10 @@ video.responsive-video {
   color: #fff;
 }
 
-.parallax-container1 {
-  position: relative;
-  overflow: hidden;
-  height: 70px;
-resize: inherit;
-}
-
-.parallax-container1 .parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.parallax-container1 .parallax img {
-  opacity: 0;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 250px;
-resize: inherit;
+  height: 500px;
 }
 
 .parallax-container .parallax {
@@ -2985,8 +2945,8 @@ ul.staggered-list li {
 
 .page-footer {
   padding-top: 20px;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #ee6e73;
 }
 
 .page-footer .footer-copyright {
@@ -3005,7 +2965,7 @@ ul.staggered-list li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0px;
-  color: #000;
+  color: rgba(255, 255, 255, 0.8);
   background-color: rgba(51, 51, 51, 0.08);
 }
 
@@ -4310,8 +4270,8 @@ table span.badge {
 }
 
 nav {
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #ee6e73;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4332,7 +4292,7 @@ nav.nav-extended .nav-content {
 }
 
 nav a {
-  color: #000;
+  color: #fff;
 }
 
 nav i,
@@ -4370,12 +4330,9 @@ nav .sidenav-trigger i {
 
 nav .brand-logo {
   position: absolute;
-  color: #000;
+  color: #fff;
   display: inline-block;
-  font-size: 2.5rem;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 2.1rem;
   padding: 0;
 }
 
@@ -4442,7 +4399,7 @@ nav ul a {
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   font-size: 1rem;
-  color: #000;
+  color: #fff;
   display: block;
   padding: 0 15px;
   cursor: pointer;
@@ -4601,13 +4558,6 @@ h6 {
   margin: 0.7666666667rem 0 0.46rem 0;
 }
 
-
-h7{
-  font-size: 2.92rem;
-  line-height: 110%;
-  margin: 1.9466666667rem 0 1.168rem 0;
-  font-family: 'Nunito', sans-serif;
-}
 em {
   font-style: italic;
 }
@@ -5239,8 +5189,8 @@ small {
 .btn-small:disabled,
 .btn-flat:disabled,
 .btn[disabled],
-[disabled].btn-large,
-[disabled].btn-small,
+.btn-large[disabled],
+.btn-small[disabled],
 .btn-floating[disabled],
 .btn-large[disabled],
 .btn-small[disabled],
@@ -5266,8 +5216,8 @@ small {
 .btn-small:disabled:hover,
 .btn-flat:disabled:hover,
 .btn[disabled]:hover,
-[disabled].btn-large:hover,
-[disabled].btn-small:hover,
+.btn-large[disabled]:hover,
+.btn-small[disabled]:hover,
 .btn-floating[disabled]:hover,
 .btn-large[disabled]:hover,
 .btn-small[disabled]:hover,
@@ -5813,6 +5763,10 @@ body.keyboard-focused .dropdown-content li:focus {
   will-change: top, opacity;
 }
 
+.modal:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 992px) {
   .modal {
     width: 80%;
@@ -6159,6 +6113,9 @@ label {
 :-ms-input-placeholder {
   color: #d1d1d1;
 }
+::-ms-input-placeholder {
+  color: #d1d1d1;
+}
 ::placeholder {
   color: #d1d1d1;
 }
@@ -6339,28 +6296,28 @@ textarea.materialize-textarea.validate + label {
 
 /* Validation Sass Placeholders */
 input.valid:not([type]), input.valid:not([type]):focus,
-input[type=text].valid:not(.browser-default),
-input[type=text].valid:not(.browser-default):focus,
-input[type=password].valid:not(.browser-default),
-input[type=password].valid:not(.browser-default):focus,
-input[type=email].valid:not(.browser-default),
-input[type=email].valid:not(.browser-default):focus,
-input[type=url].valid:not(.browser-default),
-input[type=url].valid:not(.browser-default):focus,
-input[type=time].valid:not(.browser-default),
-input[type=time].valid:not(.browser-default):focus,
-input[type=date].valid:not(.browser-default),
-input[type=date].valid:not(.browser-default):focus,
-input[type=datetime].valid:not(.browser-default),
-input[type=datetime].valid:not(.browser-default):focus,
-input[type=datetime-local].valid:not(.browser-default),
-input[type=datetime-local].valid:not(.browser-default):focus,
-input[type=tel].valid:not(.browser-default),
-input[type=tel].valid:not(.browser-default):focus,
-input[type=number].valid:not(.browser-default),
-input[type=number].valid:not(.browser-default):focus,
-input[type=search].valid:not(.browser-default),
-input[type=search].valid:not(.browser-default):focus,
+input.valid[type=text]:not(.browser-default),
+input.valid[type=text]:not(.browser-default):focus,
+input.valid[type=password]:not(.browser-default),
+input.valid[type=password]:not(.browser-default):focus,
+input.valid[type=email]:not(.browser-default),
+input.valid[type=email]:not(.browser-default):focus,
+input.valid[type=url]:not(.browser-default),
+input.valid[type=url]:not(.browser-default):focus,
+input.valid[type=time]:not(.browser-default),
+input.valid[type=time]:not(.browser-default):focus,
+input.valid[type=date]:not(.browser-default),
+input.valid[type=date]:not(.browser-default):focus,
+input.valid[type=datetime]:not(.browser-default),
+input.valid[type=datetime]:not(.browser-default):focus,
+input.valid[type=datetime-local]:not(.browser-default),
+input.valid[type=datetime-local]:not(.browser-default):focus,
+input.valid[type=tel]:not(.browser-default),
+input.valid[type=tel]:not(.browser-default):focus,
+input.valid[type=number]:not(.browser-default),
+input.valid[type=number]:not(.browser-default):focus,
+input.valid[type=search]:not(.browser-default),
+input.valid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
   border-bottom: 1px solid #4CAF50;
@@ -6369,28 +6326,28 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-
 }
 
 input.invalid:not([type]), input.invalid:not([type]):focus,
-input[type=text].invalid:not(.browser-default),
-input[type=text].invalid:not(.browser-default):focus,
-input[type=password].invalid:not(.browser-default),
-input[type=password].invalid:not(.browser-default):focus,
-input[type=email].invalid:not(.browser-default),
-input[type=email].invalid:not(.browser-default):focus,
-input[type=url].invalid:not(.browser-default),
-input[type=url].invalid:not(.browser-default):focus,
-input[type=time].invalid:not(.browser-default),
-input[type=time].invalid:not(.browser-default):focus,
-input[type=date].invalid:not(.browser-default),
-input[type=date].invalid:not(.browser-default):focus,
-input[type=datetime].invalid:not(.browser-default),
-input[type=datetime].invalid:not(.browser-default):focus,
-input[type=datetime-local].invalid:not(.browser-default),
-input[type=datetime-local].invalid:not(.browser-default):focus,
-input[type=tel].invalid:not(.browser-default),
-input[type=tel].invalid:not(.browser-default):focus,
-input[type=number].invalid:not(.browser-default),
-input[type=number].invalid:not(.browser-default):focus,
-input[type=search].invalid:not(.browser-default),
-input[type=search].invalid:not(.browser-default):focus,
+input.invalid[type=text]:not(.browser-default),
+input.invalid[type=text]:not(.browser-default):focus,
+input.invalid[type=password]:not(.browser-default),
+input.invalid[type=password]:not(.browser-default):focus,
+input.invalid[type=email]:not(.browser-default),
+input.invalid[type=email]:not(.browser-default):focus,
+input.invalid[type=url]:not(.browser-default),
+input.invalid[type=url]:not(.browser-default):focus,
+input.invalid[type=time]:not(.browser-default),
+input.invalid[type=time]:not(.browser-default):focus,
+input.invalid[type=date]:not(.browser-default),
+input.invalid[type=date]:not(.browser-default):focus,
+input.invalid[type=datetime]:not(.browser-default),
+input.invalid[type=datetime]:not(.browser-default):focus,
+input.invalid[type=datetime-local]:not(.browser-default),
+input.invalid[type=datetime-local]:not(.browser-default):focus,
+input.invalid[type=tel]:not(.browser-default),
+input.invalid[type=tel]:not(.browser-default):focus,
+input.invalid[type=number]:not(.browser-default),
+input.invalid[type=number]:not(.browser-default):focus,
+input.invalid[type=search]:not(.browser-default),
+input.invalid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown,
 .select-wrapper.invalid > input.select-dropdown:focus {
@@ -6594,7 +6551,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
           transform-origin: 0 0;
 }
 
-.input-field > input[type]:-webkit-autofill:not(.browser-default) + label,
+.input-field > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
 .input-field > input[type=date]:not(.browser-default) + label,
 .input-field > input[type=time]:not(.browser-default) + label {
   -webkit-transform: translateY(-14px) scale(0.8);
@@ -8337,7 +8294,7 @@ input[type=range]::-ms-thumb {
 .slider .slides {
   background-color: #9e9e9e;
   margin: 0;
-  height: 700px;
+  height: 400px;
 }
 
 .slider .slides li {
@@ -8352,8 +8309,8 @@ input[type=range]::-ms-thumb {
 }
 
 .slider .slides li img {
-  height: 110%;
-  width: 110%;
+  height: 100%;
+  width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -8398,7 +8355,7 @@ input[type=range]::-ms-thumb {
 }
 
 .slider .indicators .indicator-item.active {
-  background-color: #aeaeae;
+  background-color: #4CAF50;
 }
 
 .carousel {
@@ -8460,7 +8417,6 @@ input[type=range]::-ms-thumb {
 }
 
 .carousel .carousel-item > img {
-height:auto;
   width: 100%;
 }
 

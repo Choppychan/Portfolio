@@ -6,9 +6,122 @@
  * Made By MaterializeCSS.com
  */
 
+nav {
+  background-color: #FFFFFF;
+}
+
+nav .brand-logo {
+  color: #000;
+  font-size: 2.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+nav ul a {
+  color: #000;
+}
+
+nav a {
+    color: #000;
+}
+
+.sidenav li > a > i,
+.sidenav li > a > [class^="mdi-"], .sidenav li > a li > a > [class*="mdi-"],
+.sidenav li > a > i.material-icons {
+  margin: auto;
+}
+
+.piccolo{
+  height: 60px;
+  width: 60px;
+}
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+a.links:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a.links:hover {
+  color: #948f8f;
+  text-decoration:underline;
+}
+
+a.links {
+  color: #948f8f;
+  text-decoration: none;
+}
+
+h7 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.9466666667rem 0 1.168rem 0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+}
+
+
+h8 {
+  color: #000;
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.9466666667rem 0 1.168rem 0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  left: 0;
+  line-height: 100px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.slider .slides {
+  height: 700px;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #aeaeae;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #aeaeae;
+}
+
+.right-align {
+ text-shadow: 2px 2px 8px #000;
+}
+
+.center-align {
+ text-shadow: 2px 2px 8px #000;
+}
+
+.left-align {
+ text-shadow: 2px 2px 8px #000;
+}
+
+.parallax-container {
+  height: 200px;
+}
+
+.card.large {
+  height: 510px;
+}
+
+
+.page-footer {
+  color: #000;
+  background-color: #FFFFFF;
+}
+
+.page-footer .footer-copyright {
+    color: #000;
+  }
