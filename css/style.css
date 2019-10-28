@@ -1,10 +1,10 @@
 /* Custom Stylesheet */
 /**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+* Use this file to override Materialize files so you can update
+* the core Materialize files in the future
+*
+* Made By MaterializeCSS.com
+*/
 
 nav {
   background-color: #FFFFFF;
@@ -23,7 +23,7 @@ nav ul a {
 }
 
 nav a {
-    color: #000;
+  color: #000;
 }
 
 .sidenav li > a > i,
@@ -32,16 +32,12 @@ nav a {
   margin: auto;
 }
 
-.piccolo{
-  height: 60px;
-  width: 60px;
-}
 .icon-block {
   padding: 0 15px;
 }
 
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
 
 a.links:visited {
@@ -55,7 +51,7 @@ a.links:hover {
 }
 
 a.links {
-  color: #948f8f;
+  color: #000;
   text-decoration: none;
 }
 
@@ -97,15 +93,15 @@ h8 {
 }
 
 .right-align {
- text-shadow: 2px 2px 8px #000;
+  text-shadow: 2px 2px 8px #000;
 }
 
 .center-align {
- text-shadow: 2px 2px 8px #000;
+  text-shadow: 2px 2px 8px #000;
 }
 
 .left-align {
- text-shadow: 2px 2px 8px #000;
+  text-shadow: 2px 2px 8px #000;
 }
 
 .parallax-container {
@@ -123,5 +119,5 @@ h8 {
 }
 
 .page-footer .footer-copyright {
-    color: #000;
-  }
+  color: #000;
+}
