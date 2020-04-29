@@ -121,3 +121,9 @@ h8 {
 .page-footer .footer-copyright {
   color: #000;
 }
+
+.error404 {
+font-family: 'Varela Round', sans-serif;
+text-align: center;
+color: black;
+}
