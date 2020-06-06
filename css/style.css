@@ -6,6 +6,16 @@
 * Made By MaterializeCSS.com
 */
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 nav {
   background-color: #FFFFFF;
 }
@@ -82,6 +92,7 @@ h8 {
 
 .slider .slides {
   height: 700px;
+  width: auto;
 }
 
 .slider .indicators .indicator-item.active {
