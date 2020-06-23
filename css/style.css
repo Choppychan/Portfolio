@@ -36,6 +36,10 @@ nav a {
   color: #000;
 }
 
+.background {
+  background-color: #c8a2c8;
+}
+
 .sidenav li > a > i,
 .sidenav li > a > [class^="mdi-"], .sidenav li > a li > a > [class*="mdi-"],
 .sidenav li > a > i.material-icons {
